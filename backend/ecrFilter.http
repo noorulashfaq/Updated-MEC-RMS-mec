@@ -1,0 +1,60 @@
+GET http://localhost:1234/ecrFilter/getAcdYrList
+
+###
+
+GET http://localhost:1234/ecrFilter/getSemList
+
+###
+
+GET http://localhost:1234/ecrFilter/getDeptList
+
+###
+
+GET http://localhost:1234/ecrFilter/getFacultiesList/1
+
+###
+
+GET http://localhost:1234/ecrFilter/getMajorList
+
+###
+
+GET http://localhost:1234/ecrFilter/getSubList/2001
+
+###
+
+# GET http://localhost:1234/ecrFilter/getHodFilter
+
+###
+
+# GET http://localhost:1234/ecrFilter/filterReportsWithAcdYr/3
+
+###
+
+# GET http://localhost:1234/ecrFilter/filterReportsWithAcdYrAndSem/3/1
+
+###
+
+# GET http://localhost:1234/ecrFilter/filterReportsWithMajor/2001
+
+###
+
+# GET http://localhost:1234/ecrFilter/filterReportsWithMajorAndSub/2001/3001
+
+###
+
+POST http://localhost:1234/cfilter/filterReportsWithParticular/1001
+Content-Type: application/json
+
+{
+    
+"acdyr_id": "3",
+"dept_id": "1",
+"emp_id": "",
+"major_id": "2001",
+"sem_id": "",
+"sub_id": "data_management_workshop"
+}
+
+###
+
+GET http://localhost:1234/cfilter/deltables
